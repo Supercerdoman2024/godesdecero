@@ -1,30 +1,40 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/godesdecero/ejercios"
+	"github.com/godesdecero/teclado"
 )
 
 func main() {
 
 	/*
-			variables.MuestroEnteros()
-			variables.RestoDeVariables()
+				variables.MuestroEnteros()
+				variables.RestoDeVariables()
 
-			estado, texto := variables.ConvertirATexto(200)
+				estado, texto := variables.ConvertirATexto(200)
 
-			fmt.Println(estado)
-			fmt.Println(texto)
+				fmt.Println(estado)
+				fmt.Println(texto)
 
-			fmt.Println("Acediendo desde el main ... ", variables.Fecha)
+				fmt.Println("Acediendo desde el main ... ", variables.Fecha)
 
-		variables.SaberSistemaOperativo()
+			variables.SaberSistemaOperativo()
+
+		//Ejercio
+
+		valorConvertiro, texto := ejercios.ConvertirStringANumero("hh")
+
+		fmt.Println(valorConvertiro)
+		fmt.Println(texto)
+
+		//Ejercio propio
+
+		fmt.Println("")
+
+		resultado := ejercios.Calculadora("-", 2, 10)
+
+		fmt.Println("El resultado de la operacion es: ", resultado)
 	*/
 
-	valorConvertiro, texto := ejercios.ConvertirStringANumero("10")
-
-	fmt.Println(valorConvertiro)
-	fmt.Println(texto)
+	teclado.IngresarNumeros()
 
 }
