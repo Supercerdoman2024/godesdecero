@@ -2,6 +2,7 @@ package variables
 
 import (
 	"fmt"
+	"runtime"
 	"strconv"
 	"time"
 )
@@ -27,9 +28,20 @@ func RestoDeVariables() {
 
 func ConvertirATexto(numero int) (bool, string) {
 
-	var texto string
-	texto = strconv.Itoa(numero)
+	texto := strconv.Itoa(numero)
 
 	return true, texto
+
+}
+
+func SaberSistemaOperativo() {
+
+	sistema := runtime.GOOS
+
+	if sistema == "darwin" {
+		fmt.Println("Si es macos")
+	} else {
+		fmt.Println("No es macos")
+	}
 
 }
