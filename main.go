@@ -1,40 +1,40 @@
 package main
 
-import (
-	"github.com/godesdecero/teclado"
-)
+import "github.com/godesdecero/user"
 
 func main() {
 
 	/*
-				variables.MuestroEnteros()
-				variables.RestoDeVariables()
+					variables.MuestroEnteros()
+					variables.RestoDeVariables()
 
-				estado, texto := variables.ConvertirATexto(200)
+					estado, texto := variables.ConvertirATexto(200)
 
-				fmt.Println(estado)
-				fmt.Println(texto)
+					fmt.Println(estado)
+					fmt.Println(texto)
 
-				fmt.Println("Acediendo desde el main ... ", variables.Fecha)
+					fmt.Println("Acediendo desde el main ... ", variables.Fecha)
 
-			variables.SaberSistemaOperativo()
+				variables.SaberSistemaOperativo()
 
-		//Ejercio
+			//Ejercio
 
-		valorConvertiro, texto := ejercios.ConvertirStringANumero("hh")
+			valorConvertiro, texto := ejercios.ConvertirStringANumero("hh")
 
-		fmt.Println(valorConvertiro)
-		fmt.Println(texto)
+			fmt.Println(valorConvertiro)
+			fmt.Println(texto)
 
-		//Ejercio propio
+			//Ejercio propio
 
-		fmt.Println("")
+			fmt.Println("")
 
-		resultado := ejercios.Calculadora("-", 2, 10)
+			resultado := ejercios.Calculadora("-", 2, 10)
 
-		fmt.Println("El resultado de la operacion es: ", resultado)
+			fmt.Println("El resultado de la operacion es: ", resultado)
+
+		files.SumaTabla()
 	*/
 
-	teclado.IngresarNumeros()
+	user.RegistrarUsuario()
 
 }
